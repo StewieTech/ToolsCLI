@@ -1,0 +1,23 @@
+{
+  "name": "j2puml",
+  "version": "1.0.0",
+  "description": "Convert JavaScript classes to PlantUML",
+  "main": "index.js",
+  "bin": {
+    "j2puml": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/parser": "^7.25.4",
+    "@babel/traverse": "^7.25.4",
+    "acorn": "^8.12.1",
+    "commander": "^12.1.0",
+    "j2puml": "file:"
+  }
+}

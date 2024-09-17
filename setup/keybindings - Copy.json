@@ -1,0 +1,139 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+q",
+        "command": "workbench.extensions.action.disableExtension",
+        "args": ["GitHub.copilot"],
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key" : "ctrl+alt+c",
+        "command": "workbench.panel.chat.view.copilot.focus",
+        "when": "editorFocus"
+   
+    },
+    {
+        // Move focus back to the Editor
+        "key": "ctrl+alt+c",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!editorFocus"
+    },
+    // VIM settings
+     // FILE TREE
+  {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+e"
+  },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+e",
+    "when": "editorTextFocus"
+  },
+   {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+
+  {
+    "command": "deleteFile",
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+
+    // NAVIGATION
+  {
+    "key": "ctrl+shift+a",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+    {
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.togglePanel"
+  },
+    {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+w",
+    "command": "workbench.action.closeActiveEditor"
+},
+
+  // 1) Fuzzy Find Files (Ctrl + E)
+  {
+      "key": "ctrl+e",
+      "command": "workbench.action.quickOpen",
+      "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  // 4) Fuzzy Find Symbols (Ctrl + T)
+  {
+      "key": "ctrl+t",
+      "command": "workbench.action.gotoSymbol",
+      "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  // 6) Toggle Explorer Menu (Ctrl + Shift + E)
+  {
+      "key": "ctrl+shift+e",
+      "command": "workbench.view.explorer",
+      "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  // Paste Clipboard (Shift + Insert)
+  {
+      "key": "ctrl+p",
+      "command": "editor.action.clipboardPasteAction",
+      "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  // Rename symbol (Leader + v, r, n)
+  {
+      "key": "leader v r n",
+      "command": "editor.action.rename",
+      "when": "editorTextFocus && vim.mode != 'Insert'"
+  },
+  
+    {
+      "key": "alt+j",
+      "command": "editor.action.moveLinesDownAction",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "alt+k",
+      "command": "editor.action.moveLinesUpAction",
+      "when": "editorTextFocus"
+    },
+
+    {
+      "key": "ctrl+shift+t",
+      "command": "workbench.action.terminal.newWithCwd",
+      "args": {
+          "cwd": "${fileDirname}"
+      },
+      "when": "editorTextFocus"
+  },
+  
+
+  
+  
+]
+

@@ -1,0 +1,200 @@
+{
+    "settings": {
+        "python.analysis.typeCheckingMode": "off",
+        "python.linting.pylintEnabled": true,
+        "python.linting.enabled": true
+    },
+
+    "tabnine.experimentalAutoImports": true,
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "editor.accessibilityPageSize": 1000,
+        "notebook.output.textLineLimit": 1000,
+    "security.workspace.trust.untrustedFiles": "open",
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "window.zoomLevel": -2,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Windows PowerShell": {
+            "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "cpp": false
+    },
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.statusBar.visible": true,
+    "workbench.settings.editor": "json",
+
+    //VIM
+     "vim.leader": "<Space>", 
+     "editor.lineNumbers": "relative",
+     "vim.highlightedyank.enable": true,
+"vim.highlightedyank.color": "rgba(255,255,0,0.5)",
+"vim.highlightedyank.timeout": 300,
+     // NAVIGATION
+    // switch b/w buffers
+ "vim.hlsearch": true,
+ "vim.showMarksInGutter": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<C-h>"], "commands": [":bprevious"] },
+    { "before": ["<C-l>"], "commands": [":bnext"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+       
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },   
+     { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+
+            // Map Leader + v, r, n to Rename Symbol
+            {
+                "before": ["<leader>", "v", "r", "n"],
+                "commands": ["editor.action.rename"]
+            },
+            // Map Ctrl + P to Paste
+            {
+                "before": ["<C-p>"],
+                "commands": ["editor.action.clipboardPasteAction"]
+            },
+            // Map Ctrl + E to Fuzzy Find Files
+            {
+                "before": ["<C-e>"],
+                "commands": ["workbench.action.quickOpen"]
+            },
+            // Map Ctrl + T to Fuzzy Find Symbols
+            {
+                "before": ["<C-t>"],
+                "commands": ["workbench.action.gotoSymbol"]
+            },
+            // Map Ctrl + Shift + E to Toggle Explorer Menu
+            {
+                "before": ["<C-S-e>"],
+                "commands": ["workbench.view.explorer"]
+            },
+    {
+        "before": ["<S-C-l>"],
+        "commands": [
+            "workbench.action.nextEditor"
+        ]
+    },
+    {
+        "before": ["<S-C-h>"],
+        "commands": [
+            "workbench.action.previousEditor"
+        ]
+    }
+
+            
+        ],
+    
+    
+
+
+
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
+    {
+        "before": ["g", "r"],
+        "commands": ["editor.action.referenceSearch.trigger"]
+      }
+  ],
+
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    // Other settings can go here
+"vim.cmdLineInitialColon": true,
+"vim.statusBarColorControl": true,
+"vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+"vim.statusBarColors.insert": "#BF616A",
+"vim.statusBarColors.visual": "#B48EAD",
+"vim.statusBarColors.visualline": "#B48EAD",
+"vim.statusBarColors.visualblock": "#A3BE8C",
+"vim.statusBarColors.replace": "#D08770",
+"workbench.colorCustomizations": {
+    "statusBar.background": "#8FBCBB",
+    "statusBar.noFolderBackground": "#8FBCBB",
+    "statusBar.debuggingBackground": "#8FBCBB",
+    "statusBar.foreground": "#434C5E",
+    "statusBar.debuggingForeground": "#434C5E"
+},
+"editor.wordWrap": "on",
+"liveServer.settings.donotShowInfoMsg": true,
+}
+ 
